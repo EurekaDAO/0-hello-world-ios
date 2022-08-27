@@ -1,11 +1,12 @@
-# 💎 Emerald Academy
+# 💎 Emerald Academy - iOS Version by Eureka DAO
 
 ## 🚩 Challenge 0: Hello World
 
 🎫 Deploy a simple HelloWorld contract to learn the basics of the Flow blockchain and Cadence. You'll use:
-- The local Flow emulator to deploy smart contracts. 
-- The local Flow dev wallet to log into test accounts.
-- A template Next.js app with sample scripts and transactions to interact with your contract.
+
+- The local Flow emulator to deploy smart contracts.
+- The local Flow dev wallet to log in to test accounts.
+- A template Swift iOS/iPadOS app with sample scripts and transactions to interact with your contract.
 
 🌟 The final deliverable is a DApp that lets users read and change a greeting field on Flow testnet.
 
@@ -13,32 +14,25 @@
 
 ---
 
-# Video Walkthrough
+## Video Walkthrough
 
-Want a video walkthrough? Check out Jacob Tucker's walkthrough here: [![Challenge #0 (Hello World) Walkthrough](https://i.imgur.com/mlDKsL6.jpg)](https://www.youtube.com/watch?v=4HiXSGES8_o "Emerald Academy - Challenge #0 (Hello World) Walkthrough")
+Coming Soon!
 
 ---
 
-# 📦 Checkpoint 0: Install
+## 📦 Checkpoint 0: Install
 
-Required: 
-* [Git](https://git-scm.com/downloads)
-* [Node](https://nodejs.org/dist/latest-v16.x/)  (🧨 Use Node v16 or a previous version as v17 may cause errors 🧨). You know you have installed it if you type `node -v` in your terminal and it prints a version.
-* [Flow CLI](https://docs.onflow.org/flow-cli/install/)  (🧨 Make sure to install the correct link for your system 🧨). You know you have installed it if you type `flow version` in your terminal and it prints a version.
+Required:
 
-```sh
-git clone https://github.com/emerald-dao/0-hello-world.git
-```
-
-> in a terminal window, 📱 install the dependencies start your frontend:
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/dist/latest-v16.x/)  (🧨 Use Node v16 or a previous version as v17 may cause errors 🧨). You know you have installed it if you type `node -v` in your terminal and it prints a version.
+- [Flow CLI](https://docs.onflow.org/flow-cli/install/)  (🧨 Make sure to install the correct link for your system 🧨). You know you have installed it if you type `flow version` in your terminal and it prints a version.
 
 ```sh
-cd 0-hello-world
-npm install
-npm run dev
+git clone https://github.com/EurekaDAO/0-hello-world-ios.git
 ```
 
-> in a second terminal window, start your 👷‍ local emulator:
+> in a terminal window, 📱 start your 👷‍ local emulator:
 
 ```bash
 cd 0-hello-world
@@ -47,7 +41,7 @@ flow emulator start -v
 
 *Note: the `-v` flag means to print transaction and script output to your local emulator*
 
-> in a third terminal window, 💾 deploy your contract and 💸 start your local wallet:
+> in a second terminal window, 💾 deploy your contract and 💸 start your local wallet:
 
 ```bash
 cd 0-hello-world
@@ -55,13 +49,13 @@ flow project deploy
 flow dev-wallet
 ```
 
-> You can `flow project deploy --update` to deploy a new contract any time.
+> You can use `flow project deploy --update` to deploy a new contract any time.
 
-📱 Open http://localhost:3000 to see the app
+📱 Open `Hello World.xcodeproj` in Xcode and run the app in the simulator or on your iOS/iPadOS Device.
 
 ---
 
-# 👛 Checkpoint 1: Wallets
+## 👛 Checkpoint 1: Wallets
 
 We'll be using **the local Flow dev wallet**.
 
@@ -69,7 +63,7 @@ We'll be using **the local Flow dev wallet**.
 
 ---
 
-# 📘 Checkpoint 2: Reading the Greeting 
+# 📘 Checkpoint 2: Reading the Greeting
 
 > 👀 Click the `Get Greeting` button to see your greeting:
 
@@ -77,7 +71,7 @@ We'll be using **the local Flow dev wallet**.
 
 ---
 
-# ✏️ Checkpoint 3: Changing the Greeting 
+# ✏️ Checkpoint 3: Changing the Greeting
 
 > ✏️ Change the greeting! Type a new greeting into the input and click the `Change Greeting` button. You should see a transaction pop up:
 
@@ -89,7 +83,7 @@ We'll be using **the local Flow dev wallet**.
 
 ---
 
-# 💾 Checkpoint 4: Deploy it to testnet!
+# 💾 Checkpoint 4: Deploy it to testnet
 
 📔 Ready to deploy to a public testnet?!?
 
@@ -97,7 +91,7 @@ We'll be using **the local Flow dev wallet**.
 
 <img src="https://i.imgur.com/HbF4C73.png" alt="generate key pair" />
 
-> 👛 Create your **deployer account** by going to https://testnet-faucet.onflow.org/, pasting in your public key from above, and clicking `CREATE ACCOUNT`: 
+> 👛 Create your **deployer account** by going to <https://testnet-faucet.onflow.org/>, pasting in your public key from above, and clicking `CREATE ACCOUNT`:
 
 <img src="https://i.imgur.com/73OjT3K.png" alt="configure testnet account on the website" width="400" />
 
@@ -147,9 +141,10 @@ flow project deploy --network=testnet
 > Lastly, configure your .env file to point to Flow TestNet so we can interact with your new contract.
 
 In your .env file, change the following:
+
 1. `NEXT_PUBLIC_CONTRACT_ADDRESS` to your generated testnet address
 2. `NEXT_PUBLIC_ACCESS_NODE` to `https://rest-testnet.onflow.org`
-3. `NEXT_PUBLIC_WALLET` to `https://fcl-discovery.onflow.org/testnet/authn` 
+3. `NEXT_PUBLIC_WALLET` to `https://fcl-discovery.onflow.org/testnet/authn`
 
 You can now terminate all your terminals since we no longer need to run our own local blockchain or wallet. Everything lives on testnet!
 
@@ -157,7 +152,7 @@ You can now terminate all your terminals since we no longer need to run our own 
 
 ---
 
-# 📝 Make Edits!
+# 📝 Make Edits
 
 🔏 You can also check out your smart contract `HelloWorld.cdc` in `flow/cadence/HelloWorld.cdc`.
 
