@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var fclModel: FCLModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if !fclModel.loggedIn {
+            SignIn()
+        } else {
+            HelloWorldView()
         }
-        .padding()
     }
 }
 

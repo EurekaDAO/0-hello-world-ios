@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Hello_WorldApp: App {
+    @StateObject var fclModel = FCLModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(fclModel)
         }
     }
 }

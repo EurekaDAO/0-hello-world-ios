@@ -1,4 +1,4 @@
-# 💎 Emerald Academy - iOS Version by Eureka DAO
+# 💎 Emerald Academy
 
 ## 🚩 Challenge 0: Hello World
 
@@ -63,7 +63,7 @@ We'll be using **the local Flow dev wallet**.
 
 ---
 
-# 📘 Checkpoint 2: Reading the Greeting
+## 📘 Checkpoint 2: Reading the Greeting
 
 > 👀 Click the `Get Greeting` button to see your greeting:
 
@@ -71,7 +71,7 @@ We'll be using **the local Flow dev wallet**.
 
 ---
 
-# ✏️ Checkpoint 3: Changing the Greeting
+## ✏️ Checkpoint 3: Changing the Greeting
 
 > ✏️ Change the greeting! Type a new greeting into the input and click the `Change Greeting` button. You should see a transaction pop up:
 
@@ -83,7 +83,7 @@ We'll be using **the local Flow dev wallet**.
 
 ---
 
-# 💾 Checkpoint 4: Deploy it to testnet
+## 💾 Checkpoint 4: Deploy it to testnet
 
 📔 Ready to deploy to a public testnet?!?
 
@@ -96,7 +96,6 @@ We'll be using **the local Flow dev wallet**.
 <img src="https://i.imgur.com/73OjT3K.png" alt="configure testnet account on the website" width="400" />
 
 > After it finishes, click `COPY ADDRESS` and make sure to save that address somewhere. You will need it!
-
 > ⛽️ Add your new testnet account to your `flow.json` by modifying the following lines of code. Paste your address you copied above to where it says "YOUR GENERATED ADDRESS", and paste your private key where it says "YOUR PRIVATE KEY".
 
 ```json
@@ -152,18 +151,16 @@ You can now terminate all your terminals since we no longer need to run our own 
 
 ---
 
-# 📝 Make Edits
+## 📝 Make Edits
 
 🔏 You can also check out your smart contract `HelloWorld.cdc` in `flow/cadence/HelloWorld.cdc`.
 
-💼 Take a quick look at how your contract get deployed in `flow.json`.
+💼 Take a quick look at how your contract gets deployed in `flow.json`.
 
 📝 If you want to make frontend edits, open `index.js` in `pages/index.js`.
 
-# ⚔️ Side Quests
+## ⚔️ Side Quests
 
 > 🏃 Head to your next challenge [here](https://academy.ecdao.org/challenges/non-fungible-token).
-
 > 💬 Meet other builders working on this challenge and get help in the [💎 Emerald City Discord](https://discord.gg/emeraldcity)!
-
 > 👉 Problems, questions, comments on the stack? Post them to the [💎 Emerald City Discord](https://discord.gg/emeraldcity).

@@ -11,6 +11,16 @@
 		BB29E8A028BAA3F20047706E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29E89F28BAA3F20047706E /* ContentView.swift */; };
 		BB29E8A228BAA3F40047706E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB29E8A128BAA3F40047706E /* Assets.xcassets */; };
 		BB29E8A628BAA3F40047706E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB29E8A528BAA3F40047706E /* Preview Assets.xcassets */; };
+		BBDCC61228BAA81F00D52907 /* FCL in Frameworks */ = {isa = PBXBuildFile; productRef = BBDCC61128BAA81F00D52907 /* FCL */; };
+		BBDCC61928BAA8F800D52907 /* FCLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC61828BAA8F800D52907 /* FCLModel.swift */; };
+		BBDCC61C28BAA94000D52907 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC61A28BAA94000D52907 /* ImageOverlay.swift */; };
+		BBDCC61D28BAA94000D52907 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC61B28BAA94000D52907 /* HexColor.swift */; };
+		BBDCC61F28BAA96400D52907 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC61E28BAA96400D52907 /* SignIn.swift */; };
+		BBDCC62128BAB04F00D52907 /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC62028BAB04F00D52907 /* HelloWorldView.swift */; };
+		BBDCC62328BAB8A000D52907 /* HelloWorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC62228BAB8A000D52907 /* HelloWorldModel.swift */; };
+		BBDCC62628BAC57300D52907 /* Scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC62528BAC57300D52907 /* Scripts.swift */; };
+		BBDCC62828BAC58400D52907 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC62728BAC58400D52907 /* Transactions.swift */; };
+		BBDCC62A28BACD2F00D52907 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCC62928BACD2F00D52907 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,15 @@
 		BB29E8A128BAA3F40047706E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB29E8A328BAA3F40047706E /* Hello_World.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello_World.entitlements; sourceTree = "<group>"; };
 		BB29E8A528BAA3F40047706E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBDCC61828BAA8F800D52907 /* FCLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCLModel.swift; sourceTree = "<group>"; };
+		BBDCC61A28BAA94000D52907 /* ImageOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
+		BBDCC61B28BAA94000D52907 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		BBDCC61E28BAA96400D52907 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		BBDCC62028BAB04F00D52907 /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
+		BBDCC62228BAB8A000D52907 /* HelloWorldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldModel.swift; sourceTree = "<group>"; };
+		BBDCC62528BAC57300D52907 /* Scripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripts.swift; sourceTree = "<group>"; };
+		BBDCC62728BAC58400D52907 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		BBDCC62928BACD2F00D52907 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDCC61228BAA81F00D52907 /* FCL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +72,10 @@
 		BB29E89C28BAA3F20047706E /* Hello World */ = {
 			isa = PBXGroup;
 			children = (
-				BB29E89D28BAA3F20047706E /* Hello_WorldApp.swift */,
-				BB29E89F28BAA3F20047706E /* ContentView.swift */,
-				BB29E8A128BAA3F40047706E /* Assets.xcassets */,
+				BBDCC62428BAC56100D52907 /* cadence */,
+				BBDCC61528BAA87900D52907 /* View Models */,
+				BBDCC61428BAA86C00D52907 /* Views */,
+				BBDCC61328BAA85B00D52907 /* Utils */,
 				BB29E8A328BAA3F40047706E /* Hello_World.entitlements */,
 				BB29E8A428BAA3F40047706E /* Preview Content */,
 			);
@@ -67,6 +88,46 @@
 				BB29E8A528BAA3F40047706E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBDCC61328BAA85B00D52907 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCC61B28BAA94000D52907 /* HexColor.swift */,
+				BBDCC61A28BAA94000D52907 /* ImageOverlay.swift */,
+				BB29E89D28BAA3F20047706E /* Hello_WorldApp.swift */,
+				BB29E8A128BAA3F40047706E /* Assets.xcassets */,
+				BBDCC62928BACD2F00D52907 /* BackgroundView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BBDCC61428BAA86C00D52907 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCC61E28BAA96400D52907 /* SignIn.swift */,
+				BB29E89F28BAA3F20047706E /* ContentView.swift */,
+				BBDCC62028BAB04F00D52907 /* HelloWorldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBDCC61528BAA87900D52907 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCC61828BAA8F800D52907 /* FCLModel.swift */,
+				BBDCC62228BAB8A000D52907 /* HelloWorldModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BBDCC62428BAC56100D52907 /* cadence */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCC62528BAC57300D52907 /* Scripts.swift */,
+				BBDCC62728BAC58400D52907 /* Transactions.swift */,
+			);
+			path = cadence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +146,9 @@
 			dependencies = (
 			);
 			name = "Hello World";
+			packageProductDependencies = (
+				BBDCC61128BAA81F00D52907 /* FCL */,
+			);
 			productName = "Hello World";
 			productReference = BB29E89A28BAA3F20047706E /* Hello World.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +177,9 @@
 				Base,
 			);
 			mainGroup = BB29E89128BAA3F20047706E;
+			packageReferences = (
+				BBDCC61028BAA81F00D52907 /* XCRemoteSwiftPackageReference "fcl-swift" */,
+			);
 			productRefGroup = BB29E89B28BAA3F20047706E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDCC62828BAC58400D52907 /* Transactions.swift in Sources */,
+				BBDCC61928BAA8F800D52907 /* FCLModel.swift in Sources */,
+				BBDCC62A28BACD2F00D52907 /* BackgroundView.swift in Sources */,
+				BBDCC61F28BAA96400D52907 /* SignIn.swift in Sources */,
 				BB29E8A028BAA3F20047706E /* ContentView.swift in Sources */,
+				BBDCC62628BAC57300D52907 /* Scripts.swift in Sources */,
+				BBDCC61D28BAA94000D52907 /* HexColor.swift in Sources */,
+				BBDCC62128BAB04F00D52907 /* HelloWorldView.swift in Sources */,
+				BBDCC62328BAB8A000D52907 /* HelloWorldModel.swift in Sources */,
+				BBDCC61C28BAA94000D52907 /* ImageOverlay.swift in Sources */,
 				BB29E89E28BAA3F20047706E /* Hello_WorldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +353,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -287,7 +363,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.eurekadao.Hello-World";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,9 +393,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -325,7 +403,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.eurekadao.Hello-World";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBDCC61028BAA81F00D52907 /* XCRemoteSwiftPackageReference "fcl-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Outblock/fcl-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBDCC61128BAA81F00D52907 /* FCL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDCC61028BAA81F00D52907 /* XCRemoteSwiftPackageReference "fcl-swift" */;
+			productName = FCL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB29E89228BAA3F20047706E /* Project object */;
 }
