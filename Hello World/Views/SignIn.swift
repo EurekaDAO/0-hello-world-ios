@@ -27,7 +27,7 @@ struct SignIn: View {
                     .padding(.bottom, 100)
                 
                 Button(action: { Task { await fclModel.authn() } }) {
-                    Text("Sign In")
+                    Text("Log In")
                         .font(.title2)
                         .foregroundColor(fclModel.defaultTextColor)
                 }
