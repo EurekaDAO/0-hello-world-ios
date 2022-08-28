@@ -127,7 +127,7 @@ We'll be using the **Blocto** testnet wallet for testing.
 
 > 👀 Click "APPROVE" and then wait a moment before clicking the `Get Greeting` button again to allow the transaction to finalize. You should now see your new greeting:
 
-<img src="https://i.imgur.com/axVEWAR.png" alt="new greeting" />
+<img src="https://i.imgur.com/axVEWAR.png" alt="new greeting approve" /> <img src="https://i.imgur.com/Orx00nW.png" alt="new greeting" />
 
 ---
 
