@@ -38,7 +38,7 @@ struct SignIn: View {
 
                 if fclModel.env == .mainnet || fclModel.env == .testnet {
                     Picker("Wallet Provider", selection: $fclModel.provider, content: {
-                        Text("Blocoto").tag(FCLProvider.blocto)
+                        Text("Blocto").tag(FCLProvider.blocto)
                         Text("Dapper").tag(FCLProvider.dapper)
                     }).onChange(of: fclModel.provider, perform: { _ in
                         fclModel.changeWallet()

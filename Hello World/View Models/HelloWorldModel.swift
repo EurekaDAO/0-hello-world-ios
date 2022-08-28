@@ -14,8 +14,6 @@ class HelloWorldModel: ObservableObject {
     @Published var greetingText = ""
     
     func getGreeting() async {
-        greetingDisplay = "Hello, World!"
-        
         do {
             let block = try await fcl.query {
                 cadence {
@@ -25,9 +23,9 @@ class HelloWorldModel: ObservableObject {
                 gasLimit {
                     1000
                 }
-            }.decode()
+            }.decode(String.self)
             await MainActor.run {
-                print(block)
+                greetingDisplay = block ?? "Error Parsing Response"
             }
         } catch {
             // TODO: Error Handling
@@ -35,8 +33,26 @@ class HelloWorldModel: ObservableObject {
         }
     }
     
-    func changeGreeting() {
-        greetingDisplay = greetingText
-        greetingText = ""
+    func changeGreeting() async {
+        do {
+            let txId = try await fcl.mutate {
+                cadence {
+                    Transactions.changeGreeting.rawValue
+                }
+
+                arguments {
+                    [.string(greetingText)]
+                }
+
+                gasLimit {
+                    1000
+                }
+            }
+            await MainActor.run {
+                self.greetingText = ""
+            }
+        } catch {
+            print(error)
+        }
     }
 }

@@ -119,11 +119,11 @@ We'll be using the **Blocto** testnet wallet for testing.
 
 ## ✏️ Checkpoint 3: Changing the Greeting
 
-> ✏️ Change the greeting! Type a new greeting into the input and click the `Change Greeting` button. You should see a transaction pop up:
+> ✏️ Change the greeting! Type a new greeting into the input and click the `Send` button on the keyboard. You should see a transaction pop up:
 
 <img src="https://i.imgur.com/XByQNZ3.png" alt="transaction popup" />
 
-> 👀 Click "APPROVE" and then click the `Get Greeting` button again. You should now see your new greeting:
+> 👀 Click "APPROVE" and then wait a moment before clicking the `Get Greeting` button again to allow the transaction to finalize. You should now see your new greeting:
 
 <img src="https://i.imgur.com/cOW1PXB.png" alt="new greeting" />
 

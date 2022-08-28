@@ -49,7 +49,7 @@ struct HelloWorldView: View {
                 .submitLabel(.send)
                 .onSubmit {
                     guard helloWorld.greetingText.isEmpty == false else { return }
-                    helloWorld.changeGreeting()
+                    Task { await helloWorld.changeGreeting() }
                 }
                 .frame(maxWidth: .infinity, maxHeight: 50)
                 .cornerRadius(15)
