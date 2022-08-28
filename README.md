@@ -107,7 +107,7 @@ We'll be using the **Blocto** testnet wallet for testing.
 
 > Click the "Log In" button and notice a window appears asking for your email address. Enter your email address to create or log in to your Blocto account. A 6 digit code will be emailed to you to complete the login process.
 
-<img src="https://imgur.com/K25gXqb" alt="login page" /> <img src="https://imgur.com/NCreian" alt="blocto email" /> <img src="https://imgur.com/Vc3pB1c" alt="blocto email" />
+<img src="https://i.imgur.com/K25gXq.png" alt="login page" /> <img src="https://i.imgur.com/NCreian.png" alt="blocto email" /> <img src="https://i.imgur.com/Vc3pB1c.png" alt="blocto email" />
 
 ---
 
