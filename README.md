@@ -1,6 +1,6 @@
 # 💎 Emerald Academy
 
-## 🚩 Challenge 0: Hello World
+## 🚩 Challenge 0: Hello World - iOS/iPadOS
 
 > :warning: **The FCL-Swift SDK currently has an error connecting to the Dev-Wallet, this tutorial will only deploy to testnet until that is resolved**
 
@@ -106,6 +106,8 @@ Lastly, run the app in the simulator or on your iOS/iPadOS Device.
 We'll be using the **Blocto** testnet wallet for testing.
 
 > Click the "Log In" button and notice a window appears asking for your email address. Enter your email address to create or log in to your Blocto account. A 6 digit code will be emailed to you to complete the login process.
+
+<img src="https://imgur.com/K25gXqb" alt="login page" /> <img src="https://imgur.com/NCreian" alt="blocto email" /> <img src="https://imgur.com/Vc3pB1c" alt="blocto email" />
 
 ---
 
