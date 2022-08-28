@@ -30,11 +30,20 @@ Required:
 - [Node](https://nodejs.org/dist/latest-v16.x/)  (🧨 Use Node v16 or a previous version as v17 may cause errors 🧨). You know you have installed it if you type `node -v` in your terminal and it prints a version.
 - [Flow CLI](https://docs.onflow.org/flow-cli/install/)  (🧨 Make sure to install the correct link for your system 🧨). You know you have installed it if you type `flow version` in your terminal and it prints a version.
 
+> First open a terminal 📱, clone this repository, and switch to the newly created directory.
+
 ```sh
 git clone https://github.com/EurekaDAO/0-hello-world-ios.git
+cd 0-hello-world-ios
 ```
 
-> 🔐 Generate a **deployer address** by typing `flow keys generate --network=testnet` into a terminal. Make sure to save your public key and private key somewhere, you will need them soon.
+> Next we need to copy or rename `flow.json.example` to `flow.json`.
+
+```sh
+mv flow.json.example flow.json
+```
+
+> Now 🔐 Generate a **deployer address** by typing `flow keys generate --network=testnet` into a terminal. Make sure to save your public key and private key somewhere, you will need them soon.
 
 <img src="https://i.imgur.com/HbF4C73.png" alt="generate key pair" />
 
