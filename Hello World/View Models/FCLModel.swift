@@ -15,8 +15,7 @@ import SafariServices
 import SwiftUI
 import LocalAuthentication
 
-let emulatorTransport = Flow.Transport.gRPC(.init(node: "127.0.0.1", port: 3569))
-let devWallet = FCLWalletProvider(id: "devWallet", name: "Dev Wallet", method: .iframeRPC, endpoint: URL(string: "http://127.0.0.1:8701/fcl/authn")!)
+let testAccount = "YOUR GENERATED ADDRESS"
 
 class FCLModel: NSObject, ObservableObject {
     @Published var defualtBackgroundColor = Color(hex: "011E30")
@@ -57,7 +56,7 @@ class FCLModel: NSObject, ObservableObject {
         case .testnet:
             fcl.config
                 .put(.scope, value: "email")
-                .put("0xDeployer", value: "0xf8d6e0586b0a20c7")
+                .put("0xDeployer", value: testAccount)
         default:
             fcl.config
                 .put(.scope, value: "email")

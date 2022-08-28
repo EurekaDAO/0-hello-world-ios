@@ -2,6 +2,8 @@
 
 ## 🚩 Challenge 0: Hello World
 
+> :warning: **The FCL-Swift SDK currently has an error connecting to the Dev-Wallet, this tutorial will only deploy to testnet until that is resolved**
+
 🎫 Deploy a simple HelloWorld contract to learn the basics of the Flow blockchain and Cadence. You'll use:
 
 - The local Flow emulator to deploy smart contracts.
@@ -20,7 +22,7 @@ Coming Soon!
 
 ---
 
-## 📦 Checkpoint 0: Install
+## 📦 Checkpoint 0: Install && Deploy
 
 Required:
 
@@ -31,61 +33,6 @@ Required:
 ```sh
 git clone https://github.com/EurekaDAO/0-hello-world-ios.git
 ```
-
-> in a terminal window, 📱 start your 👷‍ local emulator:
-
-```bash
-cd 0-hello-world
-flow emulator start -v
-```
-
-*Note: the `-v` flag means to print transaction and script output to your local emulator*
-
-> in a second terminal window, 💾 deploy your contract and 💸 start your local wallet:
-
-```bash
-cd 0-hello-world
-flow project deploy
-flow dev-wallet
-```
-
-> You can use `flow project deploy --update` to deploy a new contract any time.
-
-📱 Open `Hello World.xcodeproj` in Xcode and run the app in the simulator or on your iOS/iPadOS Device.
-
----
-
-## 👛 Checkpoint 1: Wallets
-
-We'll be using **the local Flow dev wallet**.
-
-> Click the "Log In" button and notice a window appears with different accounts to select, each with their own Flow Token balance. Select the first account to log in to it.
-
----
-
-## 📘 Checkpoint 2: Reading the Greeting
-
-> 👀 Click the `Get Greeting` button to see your greeting:
-
-<img src="https://i.imgur.com/PsK32ap.png" alt="get greeting" />
-
----
-
-## ✏️ Checkpoint 3: Changing the Greeting
-
-> ✏️ Change the greeting! Type a new greeting into the input and click the `Change Greeting` button. You should see a transaction pop up:
-
-<img src="https://i.imgur.com/XByQNZ3.png" alt="transaction popup" />
-
-> 👀 Click "APPROVE" and then click the `Get Greeting` button again. You should now see your new greeting:
-
-<img src="https://i.imgur.com/cOW1PXB.png" alt="new greeting" />
-
----
-
-## 💾 Checkpoint 4: Deploy it to testnet
-
-📔 Ready to deploy to a public testnet?!?
 
 > 🔐 Generate a **deployer address** by typing `flow keys generate --network=testnet` into a terminal. Make sure to save your public key and private key somewhere, you will need them soon.
 
@@ -137,17 +84,39 @@ flow project deploy --network=testnet
 
 <img src="https://i.imgur.com/GBFs2Uz.png" alt="deploy contract to testnet" />
 
-> Lastly, configure your .env file to point to Flow TestNet so we can interact with your new contract.
+> You can use `flow project deploy --update` to deploy a new contract any time.
 
-In your .env file, change the following:
+📱 Open `Hello World.xcodeproj` in Xcode and run the app in the simulator or on your iOS/iPadOS Device.
 
-1. `NEXT_PUBLIC_CONTRACT_ADDRESS` to your generated testnet address
-2. `NEXT_PUBLIC_ACCESS_NODE` to `https://rest-testnet.onflow.org`
-3. `NEXT_PUBLIC_WALLET` to `https://fcl-discovery.onflow.org/testnet/authn`
+Lastly, update line 18 of `Hello World > View Models > FCLModel.swift with the newly created Testnet account so we can interact with your new contract.
 
-You can now terminate all your terminals since we no longer need to run our own local blockchain or wallet. Everything lives on testnet!
+---
 
-> Run `npm run dev` to start your application in a terminal, and have a blast with your DApp!
+## 👛 Checkpoint 1: Wallets
+
+We'll be using the **Blocto** testnet wallet for testing.
+
+> Click the "Log In" button and notice a window appears asking for your email address. Enter your email address to create or log in to your Blocto account. A 6 digit code will be emailed to you to complete the login process.
+
+---
+
+## 📘 Checkpoint 2: Reading the Greeting
+
+> 👀 Click the `Get Greeting` button to see your greeting:
+
+<img src="https://i.imgur.com/PsK32ap.png" alt="get greeting" />
+
+---
+
+## ✏️ Checkpoint 3: Changing the Greeting
+
+> ✏️ Change the greeting! Type a new greeting into the input and click the `Change Greeting` button. You should see a transaction pop up:
+
+<img src="https://i.imgur.com/XByQNZ3.png" alt="transaction popup" />
+
+> 👀 Click "APPROVE" and then click the `Get Greeting` button again. You should now see your new greeting:
+
+<img src="https://i.imgur.com/cOW1PXB.png" alt="new greeting" />
 
 ---
 
