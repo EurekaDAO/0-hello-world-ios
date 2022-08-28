@@ -115,7 +115,7 @@ We'll be using the **Blocto** testnet wallet for testing.
 
 > 👀 Click the `Get Greeting` button to see your greeting:
 
-<img src="https://i.imgur.com/PsK32ap.png" alt="get greeting" />
+<img src="https://i.imgur.com/35ltbcV.png" alt="get greeting" />
 
 ---
 
@@ -123,11 +123,11 @@ We'll be using the **Blocto** testnet wallet for testing.
 
 > ✏️ Change the greeting! Type a new greeting into the input and click the `Send` button on the keyboard. You should see a transaction pop up:
 
-<img src="https://i.imgur.com/XByQNZ3.png" alt="transaction popup" />
+<img src="https://i.imgur.com/M8pQetn.png" alt="transaction popup" />
 
 > 👀 Click "APPROVE" and then wait a moment before clicking the `Get Greeting` button again to allow the transaction to finalize. You should now see your new greeting:
 
-<img src="https://i.imgur.com/cOW1PXB.png" alt="new greeting" />
+<img src="https://i.imgur.com/axVEWAR.png" alt="new greeting" />
 
 ---
 
