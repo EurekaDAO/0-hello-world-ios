@@ -142,5 +142,7 @@ We'll be using the **Blocto** testnet wallet for testing.
 ## ⚔️ Side Quests
 
 > 🏃 Head to your next challenge [here](https://github.com/EurekaDAO/1-non-fungible-token-ios).
+
 > 💬 Meet other builders working on this challenge and get help in the [💎 Emerald City Discord](https://discord.gg/emeraldcity)!
+
 > 👉 Problems, questions, comments on the stack? Post them to the [💎 Emerald City Discord](https://discord.gg/emeraldcity).
