@@ -95,9 +95,9 @@ flow project deploy --network=testnet
 
 > You can use `flow project deploy --update` to deploy a new contract any time.
 
-📱 Open `Hello World.xcodeproj` in Xcode and run the app in the simulator or on your iOS/iPadOS Device.
+📱 Open `Hello World.xcodeproj` in Xcode and update line 18 of `Hello World > View Models > FCLModel.swift with the newly created Testnet account so we can interact with your new contract.
 
-Lastly, update line 18 of `Hello World > View Models > FCLModel.swift with the newly created Testnet account so we can interact with your new contract.
+Lastly, run the app in the simulator or on your iOS/iPadOS Device.
 
 ---
 
