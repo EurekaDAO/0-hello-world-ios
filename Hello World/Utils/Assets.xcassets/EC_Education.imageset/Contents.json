@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "EC_Education@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "EC_Education@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
